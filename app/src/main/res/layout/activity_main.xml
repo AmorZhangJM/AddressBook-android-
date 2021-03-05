@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/lineOne">
+
+        <ImageView
+            android:layout_width="107dp"
+            android:layout_height="74dp"
+            android:layout_margin="30dp"
+            android:background="@drawable/icon_phone" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="通 讯 录"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:textColor="#BC8F8F"
+            android:layout_gravity="center"
+            android:layout_marginLeft="50dp"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/lineTwo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lineOne"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="18dp"
+        android:layout_marginRight="18dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="姓 名 : "
+            android:textSize="18dp"
+            android:textStyle="bold"/>
+        <EditText
+            android:id="@+id/et_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="  请输入姓名"
+            android:textSize="16dp"
+            android:maxLength="14"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/lineTree"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lineTwo"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="18dp"
+        android:layout_marginRight="18dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="电 话 : "
+            android:textSize="18dp"
+            android:textStyle="bold"/>
+        <EditText
+            android:id="@+id/et_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="  请输入手机号码"
+            android:textSize="16dp"
+            android:maxLength="11"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/lineFour"
+        android:layout_below="@+id/lineTree"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="18dp"
+        android:layout_marginRight="18dp"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/btn_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape"
+            android:layout_weight="1"
+            android:text=" 添 加 "
+            android:textSize="16dp"
+            android:textColor="#c2c8ec"
+            android:textStyle="bold"/>
+        <Button
+            android:id="@+id/btn_query"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape"
+            android:layout_weight="1"
+            android:layout_marginLeft="4dp"
+            android:text=" 查 询 "
+            android:textSize="16dp"
+            android:textColor="#c2c8ec"
+            android:textStyle="bold"/>
+        <Button
+            android:id="@+id/btn_update"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape"
+            android:layout_weight="1"
+            android:layout_marginLeft="4dp"
+            android:text=" 修 改 "
+            android:textSize="16dp"
+            android:textColor="#c2c8ec"
+            android:textStyle="bold"/>
+        <Button
+            android:id="@+id/btn_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape"
+            android:layout_weight="1"
+            android:layout_marginLeft="4dp"
+            android:text=" 删 除 "
+            android:textSize="16dp"
+            android:textColor="#c2c8ec"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+        <TextView
+        android:id="@+id/tv_show"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:scrollbars="vertical"
+        android:layout_below="@+id/lineFour"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="18dp"
+        android:textSize="15dp"/>
+
+</RelativeLayout>
